@@ -14,7 +14,7 @@ const { UserRouter } = require("./routes/UserRouter");
 
 dotenv.config();
 // USING CORS //
-app.use(cors({ origin: ["*"] }));
+app.use(cors());
 // parse requests of content-type - application/json
 app.use(express.json());
 // parse requests of content-type - application/x-www-form-urlencoded
