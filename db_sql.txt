@@ -1,0 +1,667 @@
+CREATE TABLE `md_caste_list` (
+  `id` int(11) NOT NULL,
+  `caste_name` varchar(50) NOT NULL,
+  `created_by` varchar(50) DEFAULT 'admin@gmail.com',
+  `created_dt` datetime DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Truncate table before insert `md_caste_list`
+--
+
+TRUNCATE TABLE `md_caste_list`;
+--
+-- Dumping data for table `md_caste_list`
+--
+
+INSERT INTO `md_caste_list` (`id`, `caste_name`, `created_by`, `created_dt`) VALUES
+(1, 'Aguri', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(2, 'Bagdi', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(3, 'Baidya', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(4, 'Baishnab', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(5, 'Baishya', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(6, 'Banik', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(7, 'Barujibi', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(8, 'Brahmin- Barendra', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(9, 'Brahmin- Kulin', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(10, 'Brahmin- Other', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(11, 'Brahmin- Rahri', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(12, 'Brahmin- Rudraj', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(13, 'Dhopa', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(14, 'Goala', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(15, 'Intercaste', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(16, 'Karan', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(17, 'Karmakar', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(18, 'Kayastha', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(19, 'Kshatriya', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(20, 'Kumbhakar', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(21, 'Kurmi- Kurmi Kshatriya', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(22, 'Mahishya', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(23, 'Malakar', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(24, 'Modak', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(25, 'Namasudra/ Namassej', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(26, 'Napit', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(27, 'Rajput', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(28, 'Sadgope', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(29, 'Saha', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(30, 'Satchashi', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(31, 'SC', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(32, 'Shuri', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(33, 'ST', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(34, 'Sutradhar', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(35, 'Tamboli', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(36, 'Tantubai', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(37, 'Tili', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(38, 'Vishwakarma', 'admin@gmail.com', '2023-08-22 14:07:30'),
+(39, 'Yadav', 'admin@gmail.com', '2023-08-22 14:07:30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `md_education`
+--
+
+CREATE TABLE `md_education` (
+  `id` int(11) NOT NULL,
+  `edu_id` int(11) DEFAULT NULL,
+  `edu_name` varchar(100) DEFAULT NULL,
+  `created_by` varchar(50) DEFAULT NULL,
+  `created_dt` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Truncate table before insert `md_education`
+--
+
+TRUNCATE TABLE `md_education`;
+--
+-- Dumping data for table `md_education`
+--
+
+INSERT INTO `md_education` (`id`, `edu_id`, `edu_name`, `created_by`, `created_dt`) VALUES
+(1, 1, 'B.A', NULL, '2023-08-23 16:11:54'),
+(2, 1, 'B.A (Hons.)', NULL, '2023-08-23 16:11:54'),
+(3, 1, 'B.Com', NULL, '2023-08-23 16:11:54'),
+(4, 1, 'B.Com (Hons.)', NULL, '2023-08-23 16:11:54'),
+(5, 1, 'B.Sc', NULL, '2023-08-23 16:11:54'),
+(6, 1, 'B.Sc (Hons.)', NULL, '2023-08-23 16:11:54'),
+(7, 1, 'B.Ed', NULL, '2023-08-23 16:11:54'),
+(8, 1, 'BFA', NULL, '2023-08-23 16:11:54'),
+(9, 1, 'BFT', NULL, '2023-08-23 16:11:54'),
+(10, 1, 'BLIS', NULL, '2023-08-23 16:11:54'),
+(11, 1, 'BMM', NULL, '2023-08-23 16:11:54'),
+(12, 1, 'BSW', NULL, '2023-08-23 16:11:54'),
+(13, 1, 'B.Phil', NULL, '2023-08-23 16:11:54'),
+(14, 1, 'B.Avn', NULL, '2023-08-23 16:11:54'),
+(15, 1, 'Other Bachelors Degree in Arts/Science/Commerce', NULL, '2023-08-23 16:11:54'),
+(16, 2, 'M.A', NULL, '2023-08-23 16:11:54'),
+(17, 2, 'M.Com', NULL, '2023-08-23 16:11:54'),
+(18, 2, 'M.Sc', NULL, '2023-08-23 16:11:54'),
+(19, 2, 'M.Ed', NULL, '2023-08-23 16:11:54'),
+(20, 2, 'MFA', NULL, '2023-08-23 16:11:54'),
+(21, 2, 'MFT', NULL, '2023-08-23 16:11:54'),
+(22, 2, 'MLIS', NULL, '2023-08-23 16:11:54'),
+(23, 2, 'MMM', NULL, '2023-08-23 16:11:54'),
+(24, 2, 'MSW', NULL, '2023-08-23 16:11:54'),
+(25, 2, 'M.Phil', NULL, '2023-08-23 16:11:54'),
+(26, 2, 'Other Masters Degree in Arts/Science/Commerce', NULL, '2023-08-23 16:11:54'),
+(27, 3, 'Aeronautical Engineering', NULL, '2023-08-23 16:11:54'),
+(28, 3, 'B.Arch', NULL, '2023-08-23 16:11:54'),
+(29, 3, 'BCA', NULL, '2023-08-23 16:11:54'),
+(30, 3, 'BE', NULL, '2023-08-23 16:11:54'),
+(31, 3, 'B.PLAN', NULL, '2023-08-23 16:11:54'),
+(32, 3, 'B.SC IT / Computer Science', NULL, '2023-08-23 16:11:54'),
+(33, 3, 'B.Tech', NULL, '2023-08-23 16:11:54'),
+(34, 3, 'Other Bachelors Degree in Engineering/Computers', NULL, '2023-08-23 16:11:54'),
+(35, 4, 'M.Arch', NULL, '2023-08-23 16:11:54'),
+(36, 4, 'MCA', NULL, '2023-08-23 16:11:54'),
+(37, 4, 'ME', NULL, '2023-08-23 16:11:54'),
+(38, 4, 'M.PLAN', NULL, '2023-08-23 16:11:54'),
+(39, 4, 'M.Sc. IT/Computer Science', NULL, '2023-08-23 16:11:54'),
+(40, 4, 'M.S.( Engg)', NULL, '2023-08-23 16:11:54'),
+(41, 4, 'M.Tech', NULL, '2023-08-23 16:11:54'),
+(42, 4, 'PGDCA', NULL, '2023-08-23 16:11:54'),
+(43, 4, 'Other Masters Degree in Engineering/Computers', NULL, '2023-08-23 16:11:54'),
+(44, 5, 'BBA', NULL, '2023-08-23 16:11:54'),
+(45, 5, 'BFM (Financial Management)', NULL, '2023-08-23 16:11:54'),
+(46, 5, 'BHM (Hotel Management)', NULL, '2023-08-23 16:11:54'),
+(47, 5, 'BHRM (Human Resource Management)', NULL, '2023-08-23 16:11:54'),
+(48, 5, 'Other Bachelors Degree in Management', NULL, '2023-08-23 16:11:54'),
+(49, 6, 'MBA', NULL, '2023-08-23 16:11:54'),
+(50, 6, 'MFM (Financial Management)', NULL, '2023-08-23 16:11:54'),
+(51, 6, 'MHM (Hotel Management)', NULL, '2023-08-23 16:11:54'),
+(52, 6, 'MHRM (Human Resource Management)', NULL, '2023-08-23 16:11:54'),
+(53, 6, 'PGDM/PGDBM', NULL, '2023-08-23 16:11:54'),
+(54, 6, 'Other Masters Degree in Management', NULL, '2023-08-23 16:11:54'),
+(55, 7, 'MBBS', NULL, '2023-08-23 16:11:54'),
+(56, 7, 'BDS', NULL, '2023-08-23 16:11:54'),
+(57, 7, 'BOPT', NULL, '2023-08-23 16:11:54'),
+(58, 7, 'BAMS', NULL, '2023-08-23 16:11:54'),
+(59, 7, 'BHMS', NULL, '2023-08-23 16:11:54'),
+(60, 7, 'BSMS', NULL, '2023-08-23 16:11:54'),
+(61, 7, 'B.Pharm', NULL, '2023-08-23 16:11:54'),
+(62, 7, 'BPT', NULL, '2023-08-23 16:11:54'),
+(63, 7, 'BUMS', NULL, '2023-08-23 16:11:54'),
+(64, 7, 'BVSc', NULL, '2023-08-23 16:11:54'),
+(65, 7, 'B.Sc.Nursing', NULL, '2023-08-23 16:11:54'),
+(66, 7, 'Other Bachelors Degree in Medicine', NULL, '2023-08-23 16:11:54'),
+(67, 8, 'DNB', NULL, '2023-08-23 16:11:54'),
+(68, 8, 'MD', NULL, '2023-08-23 16:11:54'),
+(69, 8, 'MS', NULL, '2023-08-23 16:11:54'),
+(70, 8, 'MDS', NULL, '2023-08-23 16:11:54'),
+(71, 8, 'MAMS', NULL, '2023-08-23 16:11:54'),
+(72, 8, 'MHMS', NULL, '2023-08-23 16:11:54'),
+(73, 8, 'MSMS', NULL, '2023-08-23 16:11:54'),
+(74, 8, 'M.Pharm', NULL, '2023-08-23 16:11:54'),
+(75, 8, 'MPT', NULL, '2023-08-23 16:11:54'),
+(76, 8, 'MUMS', NULL, '2023-08-23 16:11:54'),
+(77, 8, 'MVSc', NULL, '2023-08-23 16:11:54'),
+(78, 8, 'M.Sc.Nursing', NULL, '2023-08-23 16:11:54'),
+(79, 8, 'Other Masters Degree in Medicine in General/Dental/Surgeon', NULL, '2023-08-23 16:11:54'),
+(80, 9, 'BGL', NULL, '2023-08-23 16:11:54'),
+(81, 9, 'B.L', NULL, '2023-08-23 16:11:54'),
+(82, 9, 'LLB', NULL, '2023-08-23 16:11:54'),
+(83, 9, 'Other Bachelors degree in Legal', NULL, '2023-08-23 16:11:54'),
+(84, 10, 'M.L', NULL, '2023-08-23 16:11:54'),
+(85, 10, 'LLM', NULL, '2023-08-23 16:11:54'),
+(86, 10, 'Other Master degree in Legal', NULL, '2023-08-23 16:11:54'),
+(87, 11, 'CA', NULL, '2023-08-23 16:11:54'),
+(88, 11, 'CFA (Chartered  Financial Analyst)', NULL, '2023-08-23 16:11:54'),
+(89, 11, 'CS', NULL, '2023-08-23 16:11:54'),
+(90, 11, 'ICWA', NULL, '2023-08-23 16:11:54'),
+(91, 11, 'Other Financial Qualifications', NULL, '2023-08-23 16:11:54'),
+(92, 12, 'Ph.D.', NULL, '2023-08-23 16:11:54'),
+(93, 12, 'Post Doctorate', NULL, '2023-08-23 16:11:54'),
+(94, 13, 'Diploma', NULL, '2023-08-23 16:11:54'),
+(95, 13, 'Polytechnic', NULL, '2023-08-23 16:11:54'),
+(96, 13, 'Trade School', NULL, '2023-08-23 16:11:54'),
+(97, 13, 'Others in Diploma', NULL, '2023-08-23 16:11:54'),
+(98, 14, 'Higher Secondary School', NULL, '2023-08-23 16:11:54'),
+(99, 14, 'Secondary School', NULL, '2023-08-23 16:11:54'),
+(100, 14, 'High School', NULL, '2023-08-23 16:11:54');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `md_edu_catg`
+--
+
+CREATE TABLE `md_edu_catg` (
+  `id` int(11) NOT NULL,
+  `edu_catg` varchar(100) DEFAULT NULL,
+  `created_by` varchar(50) DEFAULT 'admin@gmail.com',
+  `created_dt` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Truncate table before insert `md_edu_catg`
+--
+
+TRUNCATE TABLE `md_edu_catg`;
+--
+-- Dumping data for table `md_edu_catg`
+--
+
+INSERT INTO `md_edu_catg` (`id`, `edu_catg`, `created_by`, `created_dt`) VALUES
+(1, '--- Any Bachelors in Arts/Science/Commerce', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(2, '--- Any Masters in Arts/Science/Commerce', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(3, '--- Any Bachelors Degree in Engineering/Computers', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(4, '--- Any Masters Degree in Engineering/Computers', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(5, '--- Any Bachelors in Management', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(6, '---  Any Masters in Management', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(7, '---  Any Bachelors in Medicine in General/Dental/Surgeon', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(8, '--- Any Masters in Medicine in General/Dental/Surgeon', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(9, '---  Any Bachelors in Legal', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(10, '---  Any Masters in Legal', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(11, '---  Any Financial Qualification ICWA/CA/CS/CFA', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(12, '--- Doctorate & Above', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(13, '---  Any Diploma Qualifications', 'admin@gmail.com', '2023-08-23 15:51:17'),
+(14, '---  Higher Secondary/ Secondary', 'admin@gmail.com', '2023-08-23 15:51:17');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `md_income`
+--
+
+CREATE TABLE `md_income` (
+  `id` int(11) NOT NULL,
+  `income` varchar(50) NOT NULL,
+  `created_by` varchar(50) DEFAULT 'admin@gmail.com',
+  `created_dt` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Truncate table before insert `md_income`
+--
+
+TRUNCATE TABLE `md_income`;
+--
+-- Dumping data for table `md_income`
+--
+
+INSERT INTO `md_income` (`id`, `income`, `created_by`, `created_dt`) VALUES
+(1, 'Not Working', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(2, 'Upto INR 2 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(3, 'INR 2 Lacs - 4 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(4, 'INR 4 Lacs - 6 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(5, 'INR 6 Lacs - 8 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(6, 'INR 8 Lacs - 10 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(7, 'INR 10 Lacs - 12 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(8, 'INR 12 Lacs - 15 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(9, 'INR 15 Lacs - 18 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(10, 'INR 18 Lacs - 20 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(11, 'INR 20 Lacs - 30 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(12, 'INR 30 Lacs - 40 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(13, 'INR 41 Lacs - 50 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(14, 'INR 51 Lacs - 60 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(15, 'INR 61 Lacs - 70 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(16, 'INR 71 Lacs - 80 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(17, 'INR 81 Lacs - 90 Lacs', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(18, 'INR 91 Lacs - 1 Crore', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(19, 'Above 1 Crore', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(20, 'Upto USD 45,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(21, 'USD 45,000 - 50,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(22, 'USD 50,000 - 55,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(23, 'USD 55,000 - 60,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(24, 'USD 60,000 - 70,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(25, 'USD 70,000 - 80,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(26, 'USD 80,000 - 90,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(27, 'USD 90,000 - 100,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(28, 'USD 100,000 and above', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(29, 'Upto GBP 25,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(30, 'GBP 25,000 - 30,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(31, 'GBP 30,000 - 35,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(32, 'GBP 35,000 - 40,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(33, 'GBP 40,000 - 45,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(34, 'GBP 45,000 - 50,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(35, 'GBP 50,000 - 60,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(36, 'GBP 60,000 - 70,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(37, 'GBP 70,000 - 80,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(38, 'GBP 80,000 and above', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(39, 'Upto EU 35,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(40, 'EU 35,000 - 40,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(41, 'EU 40,000 - 45,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(42, 'EU 45,000 - 50,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(43, 'EU 50,000 - 55,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(44, 'EU 55,000 - 60,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(45, 'EU 60,000 - 70,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(46, 'EU 70,000 - 80,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(47, 'EU 80,000 - 90,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(48, 'EU 90,000 - 100,000', 'admin@gmail.com', '2023-08-23 13:44:10'),
+(49, 'EU 100,000 and above', 'admin@gmail.com', '2023-08-23 13:44:10');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `md_language`
+--
+
+CREATE TABLE `md_language` (
+  `id` int(11) NOT NULL,
+  `lang_name` varchar(100) DEFAULT NULL,
+  `created_by` varchar(50) NOT NULL DEFAULT 'admin@gmail.com',
+  `created_dt` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Truncate table before insert `md_language`
+--
+
+TRUNCATE TABLE `md_language`;
+--
+-- Dumping data for table `md_language`
+--
+
+INSERT INTO `md_language` (`id`, `lang_name`, `created_by`, `created_dt`) VALUES
+(1, 'Bengali', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(2, 'Marathi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(3, 'Hindi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(4, 'Marwari', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(5, 'Assamese', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(6, 'Oriya', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(7, 'Punjabi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(8, 'Tamil', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(9, 'English', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(10, 'Angika', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(11, 'Arunachali', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(12, 'Awadhi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(13, 'Bhojpuri', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(14, 'Brij', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(15, 'Bihari', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(16, 'Badaga', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(17, 'Chhatisgarhi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(18, 'Dogri', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(19, 'French', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(20, 'Garhwali', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(21, 'Garo', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(22, 'Gujarati', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(23, 'Haryanvi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(24, 'Himachali/Pahari', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(25, 'Kanauji', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(26, 'Kannada', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(27, 'Kashmiri', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(28, 'Khandesi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(29, 'Khasi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(30, 'Konkani', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(31, 'Koshali', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(32, 'Kumoani', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(33, 'Kutchi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(34, 'Lepcha', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(35, 'Ladacki', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(36, 'Magahi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(37, 'Maithili', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(38, 'Malayalam', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(39, 'Manipuri', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(40, 'Miji', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(41, 'Mizo', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(42, 'Monpa', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(43, 'Nicobarese', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(44, 'Nepali', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(45, 'Rajasthani', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(46, 'Sanskrit', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(47, 'Santhali', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(48, 'Sindhi', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(49, 'Sourashtra', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(50, 'Telugu', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(51, 'Tripuri', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(52, 'Tulu', 'admin@gmail.com', '2023-08-23 17:44:06'),
+(53, 'Urdu', 'admin@gmail.com', '2023-08-23 17:44:06');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `md_occupation`
+--
+
+CREATE TABLE `md_occupation` (
+  `id` int(11) NOT NULL,
+  `occu_id` int(11) NOT NULL,
+  `occu_name` varchar(100) NOT NULL,
+  `created_by` varchar(50) DEFAULT 'admin@gmail.com',
+  `created_dt` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Truncate table before insert `md_occupation`
+--
+
+TRUNCATE TABLE `md_occupation`;
+--
+-- Dumping data for table `md_occupation`
+--
+
+INSERT INTO `md_occupation` (`id`, `occu_id`, `occu_name`, `created_by`, `created_dt`) VALUES
+(1, 1, 'Banking Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(2, 1, 'Chartered Accountant', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(3, 1, 'Company Secretary', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(4, 1, 'Finance Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(5, 1, 'Investment Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(6, 1, 'Accounting Professional (Others)', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(7, 2, 'Admin Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(8, 2, 'Human Resources Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(9, 3, 'Actor', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(10, 3, 'Advertising Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(11, 3, 'Entertainment Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(12, 3, 'Event Manager', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(13, 3, 'Journalist', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(14, 3, 'Media Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(15, 3, 'Public Relations Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(16, 4, 'Farming', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(17, 4, 'Horticulturist', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(18, 4, 'Agricultural Professional (Others)', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(19, 5, 'Air Hostess / Flight Attendant', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(20, 5, 'Pilot / Co-Pilot', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(21, 5, 'Other Airline Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(22, 6, 'Architect', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(23, 6, 'Interior Designer', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(24, 6, 'Landscape Architect', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(25, 7, 'Animator', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(26, 7, 'Commercial Artist', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(27, 7, 'Web / UX Designers', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(28, 7, 'Artist (Others)', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(29, 7, 'Arts & Craftsman', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(30, 7, 'Creative Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(31, 8, 'Beautician', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(32, 8, 'Fashion Designer', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(33, 8, 'Hairstylist', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(34, 8, 'Jewellery Designer', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(35, 8, 'Designer (Others)', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(36, 9, 'Customer Support / BPO / KPO Professional', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(37, 10, 'IAS', 'admin@gmail.com', '2023-08-23 13:19:31'),
+(38, 10, 'IRS', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(39, 10, 'IES', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(40, 10, 'IFS', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(41, 10, 'IPS', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(42, 10, 'WBCS', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(43, 10, 'Law Enforcement Employee (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(44, 11, 'Airforce', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(45, 11, 'Army', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(46, 11, 'Navy', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(47, 11, 'Defense Services (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(48, 12, 'Lecturer', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(49, 12, 'Professor', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(50, 12, 'Research Assistant', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(51, 12, 'Research Scholar', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(52, 12, 'Teacher', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(53, 12, 'Training Professional (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(54, 13, 'Civil Engineer', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(55, 13, 'Electronics / Telecom Engineer', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(56, 13, 'Mechanical / Production Engineer', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(57, 13, 'Non IT Engineer (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(58, 14, 'Chef / Sommelier / Food Critic', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(59, 14, 'Catering Professional', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(60, 14, 'Hotel &amp; Hospitality Professional (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(61, 15, 'Software Developer / Programmer', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(62, 15, 'Software Consultant', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(63, 15, 'Hardware &amp; Networking professional', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(64, 15, 'Software Professional (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(65, 16, 'Lawyer', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(66, 16, 'Legal Assistant', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(67, 16, 'Legal Professional (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(68, 17, 'Ambulance Driver', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(69, 17, 'Analytical Chemist (P.T.)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(70, 17, 'Anesthesiologist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(71, 17, 'Asst. Matron', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(72, 17, 'Clerk', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(73, 17, 'Clinical Registrar', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(74, 17, 'Dark Room Attendant', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(75, 17, 'Dentist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(76, 17, 'Deputy Medical Superintendent', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(77, 17, 'Doctor', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(78, 17, 'Dresser', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(79, 17, 'Hospital Superintendent', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(80, 17, 'Medical Transcriptionist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(81, 17, 'Matron', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(82, 17, 'Medical Superintendent', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(83, 17, 'Nurse', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(84, 17, 'O.T. Attendant', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(85, 17, 'Obs and Gynec', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(86, 17, 'Optometrist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(87, 17, 'Pathologist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(88, 17, 'Pharmacist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(89, 17, 'Pharmacist/Compounder', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(90, 17, 'Physician Assistant', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(91, 17, 'Physiotherapist / Occupational Therapist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(92, 17, 'Psychologist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(93, 17, 'Radiologist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(94, 17, 'RMO/RSO/MO', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(95, 17, 'Senior Clerk', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(96, 17, 'Sr. Resident', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(97, 17, 'Store Keeper', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(98, 17, 'Surgeon', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(99, 17, 'Surgical Specialist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(100, 17, 'Veterinary Doctor', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(101, 17, 'Ward Boy /Ayah', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(102, 17, 'X­ray Tech./Radiograph.', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(103, 17, 'Therapist (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(104, 17, 'Medical / Healthcare Professional (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(105, 18, 'Merchant Naval Officer', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(106, 18, 'Mariner', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(107, 19, 'Marketing Professional', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(108, 19, 'Sales Professional', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(109, 20, 'Biologist / Botanist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(110, 20, 'Physicist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(111, 20, 'Science Professional (Others)', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(112, 20, 'Scientist', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(113, 21, 'CxO / Chairman / Director / President', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(114, 21, 'VP / AVP / GM / DGM', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(115, 21, 'Sr. Manager / Manager', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(116, 21, 'Consultant / Supervisor / Team Leads', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(117, 21, 'Team Member / Staff', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(118, 21, 'Officer', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(119, 22, 'Agent / Broker / Trader / Contractor', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(120, 22, 'Business Owner / Entrepreneur', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(121, 22, 'Consultant', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(122, 22, 'Customer Care Professional', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(123, 22, 'Librarian', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(124, 22, 'Politician', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(125, 22, 'Social Worker / Volunteer / NGO', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(126, 22, 'Sportsman', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(127, 22, 'Technician', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(128, 22, 'Travel & Transport Professional', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(129, 22, 'Writer', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(130, 22, 'Others', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(131, 23, 'Student', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(132, 23, 'Retired', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(133, 23, 'Home-maker', 'admin@gmail.com', '2023-08-23 13:19:32'),
+(134, 23, 'Not Working', 'admin@gmail.com', '2023-08-23 13:19:32');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `md_occu_catg`
+--
+
+CREATE TABLE `md_occu_catg` (
+  `id` int(11) NOT NULL,
+  `catg_name` varchar(100) NOT NULL,
+  `created_by` varchar(50) NOT NULL DEFAULT 'admin@gmail.com',
+  `created_dt` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Truncate table before insert `md_occu_catg`
+--
+
+TRUNCATE TABLE `md_occu_catg`;
+--
+-- Dumping data for table `md_occu_catg`
+--
+
+INSERT INTO `md_occu_catg` (`id`, `catg_name`, `created_by`, `created_dt`) VALUES
+(1, '---  Accounting, Banking & Finance', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(2, '---  Administration & HR', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(3, '---  Advertising, Media & Entertainment', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(4, '--- Agriculture', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(5, '--- Airline & Aviation', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(6, '--- Architecture & Design', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(7, '--- Artists, Animators & Web Designers', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(8, '--- Beauty, Fashion & Jewellery Designers', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(9, '--- BPO, KPO, &  Customer Support', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(10, '--- Civil Services / Law Enforcement', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(11, '--- Defense', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(12, '--- Education & Training', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(13, '--- Engineering', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(14, '--- Hotel & Hospitality', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(15, '--- IT & Software Engineering', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(16, '--- Legal', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(17, '--- Medical & Healthcare', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(18, '--- Merchant Navy', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(19, '--- Sales & Marketing', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(20, '--- Science', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(21, '--- Corporate Professionals', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(22, '--- Other Job Roles', 'admin@gmail.com', '2023-08-23 12:51:43'),
+(23, '--- Non Working', 'admin@gmail.com', '2023-08-23 12:51:43');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `md_caste_list`
+--
+ALTER TABLE `md_caste_list`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `md_education`
+--
+ALTER TABLE `md_education`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `md_edu_catg`
+--
+ALTER TABLE `md_edu_catg`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `md_income`
+--
+ALTER TABLE `md_income`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `md_language`
+--
+ALTER TABLE `md_language`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `md_occupation`
+--
+ALTER TABLE `md_occupation`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `md_occu_catg`
+--
+ALTER TABLE `md_occu_catg`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `md_caste_list`
+--
+ALTER TABLE `md_caste_list`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+
+--
+-- AUTO_INCREMENT for table `md_education`
+--
+ALTER TABLE `md_education`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+
+--
+-- AUTO_INCREMENT for table `md_edu_catg`
+--
+ALTER TABLE `md_edu_catg`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `md_income`
+--
+ALTER TABLE `md_income`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+
+--
+-- AUTO_INCREMENT for table `md_language`
+--
+ALTER TABLE `md_language`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+
+--
+-- AUTO_INCREMENT for table `md_occupation`
+--
+ALTER TABLE `md_occupation`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=135;
+
+--
+-- AUTO_INCREMENT for table `md_occu_catg`
+--
+ALTER TABLE `md_occu_catg`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
